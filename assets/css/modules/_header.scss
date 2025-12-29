@@ -1,0 +1,136 @@
+.blue_bg-wrap {
+    background-color: var(--primaryColor);
+
+    .blue_bg-inner {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .header_number {
+            color: var(--whiteColor);
+
+            &:hover {
+                color: color-mix(in srgb, var(--whiteColor), black 10%);
+            }
+
+            .bi-telephone {
+                color: var(--iconColor);
+            }
+        }
+
+        //Header Number Wrap
+
+        figure {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+
+            picture img {
+                width: auto;
+                height: 2em;
+            }
+
+            figcaption {
+                color: var(--whiteColor);
+                white-space: nowrap;
+            }
+        }
+
+        //Free Shipping wrap
+
+        .account_cart {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            a {
+                color: var(--whiteColor);
+                padding: .5rem;
+
+                &:hover {
+                    background-color: color-mix(in srgb, var(--primaryColor), black 10%);
+                }
+            }
+
+            .bi-cart2 {
+                color: var(--iconColor);
+            }
+
+        }
+
+        //Account and Cart wrap
+    }
+}
+
+// Blue BG bar wrap
+
+.main_header-inner {
+    padding-block: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: auto;
+        height: 5rem;
+    }
+
+    .search_box-wrap {
+        border: 1px solid var(--borderColor);
+        padding: 0 .5rem;
+        border-radius: .25rem;
+        outline: var(--primaryColor);
+        white-space: nowrap;
+
+        .search_bar {
+            border: none;
+            outline: none;
+            padding: 1.15rem 0;
+            width: 300px;
+            height: 2rem;
+
+
+        }
+
+        .srch_btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+
+    }
+}
+
+//Main Header Inner wrap
+
+.navbar_wrap {
+    background-color: var(--bgColor);
+    padding: .5rem 0;
+
+    .navbar_inner-wrap {
+
+        ul {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 1.5rem;
+            font-size: .9em;
+
+            a {
+                text-decoration: none;
+                color: var(--primaryColor);
+                white-space: nowrap;
+
+                &:hover {
+                    color: color-mix(in srgb, var(--primaryColor), black 20%);
+                }
+            }
+        }
+    }
+} //Nevbar Wrap
